@@ -27,15 +27,23 @@ const bikes = [
 //Funzione per rilevare il peso minore
 const getLightBike = (list) => {
 
+    //Array per contenere i pesi
     let bikeLight = [];
 
+    //Trasformo i pesi in valori numerici
     for (let i = 0; i < list.length; i++) {
 
         let light = list[i].peso;
         let lightNum = parseInt(light, 10);
-        bikeLight.push(lightNum);
+        bikeLight.push(lightNum); 
 
     }
+
+    //Trovo il valore più piccolo nell'array
+    let officialLight = Math.min(...bikeLight);
+    //Trovo la posizione del valore per poter stampare l'oggetto col peso minore
+    let objectPosition = bikeLight.indexOf(officialLight)
+    console.log(list[objectPosition]);
 
 }
 
