@@ -27,10 +27,13 @@ const bikes = [
 //Funzione per rilevare il peso minore
 const getLightBike = (list) => {
 
+    let bikeLight = [];
+
     for (let i = 0; i < list.length; i++) {
 
-        const bike = list[i];
-        console.log(bike);
+        let light = list[i].peso;
+        let lightNum = parseInt(light, 10);
+        bikeLight.push(lightNum);
 
     }
 
