@@ -23,3 +23,17 @@ const bikes = [
         peso: '4kg'
     },
 ]
+
+//Funzione per rilevare il peso minore
+const getLightBike = (list) => {
+
+    for (let i = 0; i < list.length; i++) {
+
+        const bike = list[i];
+        console.log(bike);
+
+    }
+
+}
+
+getLightBike(bikes)
