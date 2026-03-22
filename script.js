@@ -105,7 +105,14 @@ function getResult(teams) {
         let annuncio = 'La squadra ' + teams[i].name + ' ha segnato ' + goalNum + ' goal totali e subito ' + foulNum + ' falli';
         console.log(annuncio);
 
+        //Inserimento nomi e falli in un nuovo array
+        fouls.push(teams[i].name)
+        fouls.push(foulNum)
+
     }
+
+    console.log(fouls);
+    
 
 }
 
