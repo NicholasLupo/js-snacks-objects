@@ -94,14 +94,16 @@ function getResult(teams) {
         let randomGoal = Math.floor(Math.random() * 11);
         goal = randomGoal;
         let goalNum = parseInt(goal, 10);
-        console.log(goalNum);
 
         //Falli subiti
         let foul = teams[i].falli;
         let randomFoul = Math.floor(Math.random() * 11);
         foul = randomFoul;
         let foulNum = parseInt(foul, 10);
-        console.log(foulNum);
+
+        //Annuncio punteggi
+        let annuncio = 'La squadra ' + teams[i].name + ' ha segnato ' + goalNum + ' goal totali e subito ' + foulNum + ' falli';
+        console.log(annuncio);
 
     }
 
