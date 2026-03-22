@@ -48,3 +48,34 @@ const getLightBike = (list) => {
 }
 
 getLightBike(bikes)
+
+//Snack 2 - Boolean League
+//Array di oggetti
+const squadre = [
+
+    {
+        name: 'Bologna',
+        gol: '0',
+        falli : '0'
+    },
+    {
+        name: 'Juve',
+        gol: '0',
+        falli : '0'
+    },
+    {
+        name: 'Inter',
+        gol: '0',
+        falli : '0'
+    },
+    {
+        name: 'Napoli',
+        gol: '0',
+        falli : '0'
+    },
+    {
+        name: 'Atalanta',
+        gol: '0',
+        falli : '0'
+    },
+]
