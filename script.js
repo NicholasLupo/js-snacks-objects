@@ -35,7 +35,7 @@ const getLightBike = (list) => {
 
         let light = list[i].peso;
         let lightNum = parseInt(light, 10);
-        bikeLight.push(lightNum); 
+        bikeLight.push(lightNum);
 
     }
 
@@ -55,42 +55,56 @@ const squadre = [
 
     {
         name: 'Bologna',
-        gol: '0',
-        falli : '0'
+        goal: '0',
+        falli: '0'
     },
     {
         name: 'Juve',
-        gol: '0',
-        falli : '0'
+        goal: '0',
+        falli: '0'
     },
     {
         name: 'Inter',
-        gol: '0',
-        falli : '0'
+        goal: '0',
+        falli: '0'
     },
     {
         name: 'Napoli',
-        gol: '0',
-        falli : '0'
+        goal: '0',
+        falli: '0'
     },
     {
         name: 'Atalanta',
-        gol: '0',
-        falli : '0'
+        goal: '0',
+        falli: '0'
     }
 ]
 
 //Funzione per stabilire i punteggi
-function getResult (teams) {
+function getResult(teams) {
 
     //Array per nomi e falli subiti
     let fouls = [];
 
     //Assegno i punteggi e i falli
     for (let i = 0; i < teams.length; i++) {
-        
 
-        
+        //Goal fatti
+        let goal = teams[i].goal;
+        let randomGoal = Math.floor(Math.random() * 11);
+        goal = randomGoal;
+        let goalNum = parseInt(goal, 10);
+        console.log(goalNum);
+
+        //Falli subiti
+        let foul = teams[i].falli;
+        let randomFoul = Math.floor(Math.random() * 11);
+        foul = randomFoul;
+        let foulNum = parseInt(foul, 10);
+        console.log(foulNum);
+
     }
 
 }
+
+getResult(squadre)
