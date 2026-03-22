@@ -21,7 +21,7 @@ const bikes = [
     {
         name: 'Bici da bambini',
         peso: '4kg'
-    },
+    }
 ]
 
 //Funzione per rilevare il peso minore
@@ -77,5 +77,20 @@ const squadre = [
         name: 'Atalanta',
         gol: '0',
         falli : '0'
-    },
+    }
 ]
+
+//Funzione per stabilire i punteggi
+function getResult (teams) {
+
+    //Array per nomi e falli subiti
+    let fouls = [];
+
+    //Assegno i punteggi e i falli
+    for (let i = 0; i < teams.length; i++) {
+        
+
+        
+    }
+
+}
