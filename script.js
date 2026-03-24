@@ -89,6 +89,9 @@ function getResult(teams) {
     //Assegno i punteggi e i falli
     for (let i = 0; i < teams.length; i++) {
 
+        //Nomi squadre
+        let squad = teams[i].name
+
         //Goal fatti
         let goal = teams[i].goal;
         let randomGoal = Math.floor(Math.random() * 11);
@@ -104,8 +107,12 @@ function getResult(teams) {
         console.log(annuncio);
 
         //Inserimento nomi e falli in un nuovo array
-        fouls.push(teams[i].name)
-        fouls.push(foul)
+        fouls.push(
+            {
+                squad,
+                foul,
+            },
+        )
 
     }
 
